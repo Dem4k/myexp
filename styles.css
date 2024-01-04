@@ -86,8 +86,6 @@ li {
     flex-wrap: wrap;
     padding: 150px 0;
     border-radius: 10px;
-    /* box-shadow: 3px 3px 5px rgb(170, 1, 1); */
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/texture-dark-surface.jpg); */
 }
 
 .order-text {
@@ -147,38 +145,41 @@ li {
     overflow: hidden;
   }
 
-.hidden-li {
-    width: calc((100% - 72px)/4)
+.hidden-item {
+    width: calc((100% - 72px)/4);
 }
 
-.main-li {
+.name-advantages {
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 3px 3px 5px rgb(170, 1, 1), -3px -3px 5px rgb(1, 60, 255);
     font-weight: 500;
     font-size: 30px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: black;
+    color: blueviolet;
     margin-bottom: 8px;
     text-shadow: 1px 1px 1px rgb(170, 1, 1), -1px 1px 1px rgb(1, 60, 255);
 }
 
-.main-p {
+.hidden-p {
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 3px 3px 5px rgb(170, 1, 1), -3px -3px 5px rgb(1, 60, 255);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: black;
+    color: blueviolet;
     text-shadow: 1px 1px 1px rgb(170, 1, 1), -1px 1px 1px rgb(1, 60, 255);
 }
 
-.hidden-ul {
+.hidden-list {
     list-style: none;
     display: flex;
     padding-left: 0; 
     margin: 0;
-    gap: 24px;
-}
-
-.hidden-icons-ul {
-    display: flex;
     gap: 24px;
 }
 
@@ -190,7 +191,7 @@ li {
     height: 112px;
     flex-shrink: 0;
     border-radius: 4px;
-    border: 1px solid red;
+    border: 1px solid white;
     box-shadow: 3px 3px 5px rgb(170, 1, 1), -3px -3px 5px rgb(1, 60, 255);
     background: transparent;
     margin-bottom: 8px;
@@ -198,4 +199,61 @@ li {
 
 .hidden-icons-svg {
     stroke: #2E2F42;
+}
+
+/* ============== SECTION 3 ============== */
+
+.section-portfolio {
+    padding: 120px 0;
+}
+
+.portfolio-title {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 38px;
+    text-shadow: 1px 1px 1px rgb(170, 1, 1), -1px 1px 1px rgb(1, 60, 255);
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.portfolio-item {
+    width: calc((100% - 48px) / 3);
+}
+
+.portfolio-img {
+    border-radius: 5px;
+    width: 360px;
+    height: 300px;
+}
+
+.portfolio-name {
+    color: white;
+    text-shadow: 2px 1px 1px rgb(170, 1, 1), -2px 2px 1px rgb(1, 60, 255);
+}
+
+.portfolio-p {
+    color: white;
+    text-shadow: 2px 1px 1px rgb(170, 1, 1), -2px 2px 1px rgb(1, 60, 255);
+}
+
+/* ============== FOOTER ============== */
+
+.footer {
+    height: 312px;
+    background-color: black;
+    padding-left: 156px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-p {
+    width: 264px;
+    height: 72px;
+    color: white;
+    text-shadow: 2px 1px 1px rgb(170, 1, 1), -2px 2px 1px rgb(1, 60, 255);
 }
